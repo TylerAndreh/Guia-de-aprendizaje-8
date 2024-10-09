@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Distancias</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+    <h1>Convertidor de Distancias</h1>
+    <form action="convertir.php" method="POST">
+        <label for="cantidad">Unidades a convertir:</label>
+        <input type="text" id="cantidad" name="cantidad">
+
+        <select name="from_unit">
+            <option value="km">km</option>
+            <option value="m">m</option>
+            <option value="cm">cm</option>
+            <option value="mm">mm</option>
+        </select>
+        <span> a </span>
+        <select name="to_unit">
+            <option value="km">km</option>
+            <option value="m">m</option>
+            <option value="cm">cm</option>
+            <option value="mm">mm</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Convertir</button>
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+
+</html>
